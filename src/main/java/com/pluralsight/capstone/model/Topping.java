@@ -15,4 +15,10 @@ public abstract class Topping {
     public void addExtra(int amount) {
         this.extraAmount += amount;
     }
+
+    public double getPrice(String size) {
+        double base = getBasePrice(size);
+        double extraPrice = getExtraPrice(size) * extraAmount;
+        return base + extraPrice;
+    }
 }
