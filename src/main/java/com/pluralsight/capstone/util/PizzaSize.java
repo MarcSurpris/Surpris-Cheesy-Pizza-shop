@@ -23,5 +23,14 @@ public class PizzaSize {
         };
     }
 
+    public static double getExtraMeatPrice(String size) {
+        return switch (size) {
+            case PERSONAL_8_INCH -> 0.50;
+            case MEDIUM_12_INCH -> 1.00;
+            case LARGE_16_INCH -> 1.50;
+            default -> 0.0;
+        };
+    }
+
 
 }
