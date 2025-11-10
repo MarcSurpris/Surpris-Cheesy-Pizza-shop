@@ -32,5 +32,14 @@ public class PizzaSize {
         };
     }
 
+    public static double getCheesePrice(String size) {
+        return switch (size) {
+            case PERSONAL_8_INCH -> 0.75;
+            case MEDIUM_12_INCH -> 1.50;
+            case LARGE_16_INCH -> 2.25;
+            default -> 0.0;
+        };
+    }
+
 
 }
