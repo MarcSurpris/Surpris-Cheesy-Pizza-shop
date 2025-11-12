@@ -1,6 +1,8 @@
 package com.pluralsight.capstone.model;
 // Pizza class
 
+import com.pluralsight.capstone.util.PizzaSize;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,5 +30,20 @@ public class Pizza implements Item {
             }
         }
         toppings.add(topping);
+    }
+
+    public double getPrice() {
+        double crustPrice = PizzaSize.getBasePrice(size); // Base includes crust?
+        // crust price is the base for the pizza
+        // Stuffed crust is additional.
+        double stuffedPrice = stuffedCrust ? 2.00 : 0.0;
+
+        double toppingsPrice = 0.0;
+        for (Topping t : toppings) {
+            toppingsPrice += t.getPrice(size);
+        }
+
+        return crustPrice + stuffedPrice + toppingsPrice;
+
     }
 }
