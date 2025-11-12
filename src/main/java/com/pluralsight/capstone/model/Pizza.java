@@ -14,4 +14,8 @@ public class Pizza implements Item {
         this.size = size;
         this.crust = crust;
     }
+
+    public void setStuffedCrust(boolean stuffed) {
+        this.stuffedCrust = stuffed;
+    }
 }
