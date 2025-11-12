@@ -18,4 +18,15 @@ public class Pizza implements Item {
     public void setStuffedCrust(boolean stuffed) {
         this.stuffedCrust = stuffed;
     }
+
+    public void addTopping(Topping topping) {
+        // check if same topping already exists, add extra
+        for (Topping t : toppings) {
+            if (t.getName().equals(topping.getName())) {
+                t.addExtra(1);
+                return;
+            }
+        }
+        toppings.add(topping);
+    }
 }
