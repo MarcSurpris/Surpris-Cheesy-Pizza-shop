@@ -5,4 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pizza implements Item {
+    private String size;
+    private String crust;
+    private boolean stuffedCrust = false;
+    private List<Topping> toppings = new ArrayList<>();
+
+    public Pizza(String size, String crust) {
+        this.size = size;
+        this.crust = crust;
+    }
 }
