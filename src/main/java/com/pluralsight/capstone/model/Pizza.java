@@ -4,5 +4,5 @@ package com.pluralsight.capstone.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pizza {
+public class Pizza implements Item {
 }
