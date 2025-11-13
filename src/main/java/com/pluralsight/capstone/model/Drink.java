@@ -16,4 +16,9 @@ public class Drink implements Item {
     public double getPrice() {
         return DrinkSize.getPrice(drinkSize);
     }
+
+    @Override
+    public String getDescription() {
+        return drinkSize + " " + flavor + " drink";
+    }
 }
