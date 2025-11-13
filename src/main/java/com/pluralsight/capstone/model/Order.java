@@ -32,4 +32,15 @@ public class Order {
         return hasPizza || hasDrinkOrKnots;
     }
 
+    public String generateReceipt() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order Receipt\n");
+        sb.append("Date: ").append(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss"))).append("\n");
+        for (Item item : items) {
+            sb.append(item.getDescription()).append(" - $").append(String.format("%.2f", item.getPrice())).append("\n");
+        }
+        sb.append("Total: $").append(String.format("%.2f", totalCost)).append("\n");
+        return sb.toString();
+    }
+
 }
