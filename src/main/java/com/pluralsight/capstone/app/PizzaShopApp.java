@@ -1,5 +1,6 @@
 package com.pluralsight.capstone.app;
 
+import com.pluralsight.capstone.model.Meat;
 import com.pluralsight.capstone.model.Order;
 import com.pluralsight.capstone.model.Pizza;
 import com.pluralsight.capstone.util.CrustType;
@@ -113,5 +114,17 @@ public class PizzaShopApp {
         addToppingsToPizza(pizza);
 
         currentOrder.addItem(pizza);
+    }
+
+    private static void addToppingsToPizza(Pizza pizza) {
+        // Meats
+        System.out.println("Add meats? (pepperoni, sausage, ham, bacon, chicken, meatball) Enter names separated by comma, or none");
+        String meatInput = scanner.nextLine().trim();
+        if (!meatsInput.equals("none")) {
+            String[] meats = meatsInput.split(",");
+            for (String m : meats) {
+                pizza.addTopping(new Meat(m.trim()));
+            }
+        }
     }
 }
