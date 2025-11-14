@@ -6,7 +6,11 @@
 
 Surpris Pizza Shop is a console-based point-of-sale (POS) system designed for a growing custom pizza shop. It automates the ordering process, allowing customers to create personalized pizzas while ensuring a seamless experience from order placement to receipt generation.  Why it's useful: Eliminates manual paper orders, handles complex customizations, and scales for future online integration.
 What you can do: Build, validate, and save orders with detailed pricing.
-Audience: Java developers, students learning OOP, or anyone building POS systems.  Built as part of the Pluralsight Advanced Java OOP Capstone, emphasizing Object-Oriented Principles like inheritance, polymorphism, and encapsulation.  
+
+**Audience**
+
+Java developers, students learning OOP, or anyone building POS systems.  
+Built as part of the Pluralsight Advanced Java OOP Capstone, emphasizing Object-Oriented Principles like inheritance, polymorphism, and encapsulation.  
 
 **Features**
 
@@ -59,17 +63,6 @@ Clone the repository:  bash
 
 git clone https://github.com/MarcSurpris/Surpris-Cheesy-Pizza-shop.git
 cd Surpris-Cheesy-Pizza-shop
-
-
-// From PizzaSize.java: Dynamic meat pricing based on size
-public static double getMeatPrice(String size) {
-return switch (size) {
-case PERSONAL_8_INCH -> 1.00;
-case MEDIUM_12_INCH  -> 2.00;
-case LARGE_16_INCH   -> 3.00;
-default -> 0.0;
-};
-}
 
 Demonstrates clean, readable pricing logic using Java 14+ switch expressions. Scalable for more sizes without refactoring.
 GitHub Project BoardView Project Board →  Columns: To Do, In Progress, Review, Done  
