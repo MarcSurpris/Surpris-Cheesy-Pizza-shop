@@ -6,11 +6,12 @@
 
 Surpris Pizza Shop is a console-based point-of-sale (POS) system designed for a growing custom pizza shop. It automates the ordering process, allowing customers to create personalized pizzas while ensuring a seamless experience from order placement to receipt generation.  Why it's useful: Eliminates manual paper orders, handles complex customizations, and scales for future online integration.
 What you can do: Build, validate, and save orders with detailed pricing.
-Audience: Java developers, students learning OOP, or anyone building POS systems.  Built as part of the Pluralsight Advanced Java OOP Capstone, emphasizing Object-Oriented Principles like inheritance, polymorphism, and encapsulation.  FeaturesFeature
-Description
-Custom Pizzas
-Choose from 3 sizes, 4 crust types, stuffed crust, and unlimited toppings with extras.
-Topping Categories
+Audience: Java developers, students learning OOP, or anyone building POS systems.  Built as part of the Pluralsight Advanced Java OOP Capstone, emphasizing Object-Oriented Principles like inheritance, polymorphism, and encapsulation.  
+
+# Features
+
+Feature description Custom Pizzas Choose from 3 sizes, 4 crust types, stuffed crust, and unlimited toppings with extras. 
+Topping Categories,
 Premium (Meat, Cheese) with costs; Regular, Sauce, Side included (extras free for non-premium).
 Pricing Engine
 Dynamic calculations based on size, using string constants and switch expressions.
