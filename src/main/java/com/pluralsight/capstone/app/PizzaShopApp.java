@@ -1,6 +1,7 @@
 package com.pluralsight.capstone.app;
 
 import com.pluralsight.capstone.model.Order;
+import com.pluralsight.capstone.util.PizzaSize;
 
 import java.util.Scanner;
 
@@ -73,5 +74,21 @@ public class PizzaShopApp {
         System.out.println("3) Add Garlic Knots");
         System.out.println("4) Checkout");
         System.out.println("0) Cancel Order");
+    }
+
+    private static void addPizza() {
+        System.out.println("Add Pizza");
+
+        // Select size
+        System.out.println("Select size: 1) Personal 8\", 2) Medium 12\", 3) Large 16\"");
+        int sizeChoice = getIntInput();
+        String size = switch (sizeChoice) {
+            case 1 -> PizzaSize.PERSONAL_8_INCH;
+            case 2 -> PizzaSize.MEDIUM_12_INCH;
+            case 3 -> PizzaSize.LARGE_16_INCH;
+            default -> PizzaSize.MEDIUM_12_INCH;
+        };
+
+
     }
 }
