@@ -2,22 +2,9 @@
 
 ![img.png](img.png)
 
-PTable of ContentsProject Overview (#project-overview)  
-Features (#features)  
-Application Flow (#application-flow)  
-Screenshots (#screenshots)  
-Class Diagram (#class-diagram)  
-Project Structure (#project-structure)  
-How to Run (#how-to-run)  
-Interesting Code Snippet (#interesting-code-snippet)  
-GitHub Project Board (#github-project-board)  
-Technologies Used (#technologies-used)  
-Future Enhancements (#future-enhancements)  
-Contributing (#contributing)  
-License (#license)  
-Author (#author)
 
-Project OverviewPIZZA-licious is a console-based point-of-sale (POS) system designed for a growing custom pizza shop. It automates the ordering process, allowing customers to create personalized pizzas while ensuring a seamless experience from order placement to receipt generation.  Why it's useful: Eliminates manual paper orders, handles complex customizations, and scales for future online integration.
+Project Overview 
+Surpris Pizza Shop is a console-based point-of-sale (POS) system designed for a growing custom pizza shop. It automates the ordering process, allowing customers to create personalized pizzas while ensuring a seamless experience from order placement to receipt generation.  Why it's useful: Eliminates manual paper orders, handles complex customizations, and scales for future online integration.
 What you can do: Build, validate, and save orders with detailed pricing.
 Audience: Java developers, students learning OOP, or anyone building POS systems.  Built as part of the Pluralsight Advanced Java OOP Capstone, emphasizing Object-Oriented Principles like inheritance, polymorphism, and encapsulation.  FeaturesFeature
 Description
@@ -47,7 +34,6 @@ Home Screen
 ├── Checkout → View details & total → Confirm → Save receipt
 └── Cancel Order
 
-ScreenshotsHome Screen text
 
 Home Screen
 1) New Order
@@ -62,37 +48,24 @@ Would you like stuffed crust? (y/n)
 Add meats? (pepperoni, sausage...) Enter names separated by comma, or none
 ... (similar for cheeses, regulars, sauces, sides)
 
-Sample Receipt (receipts/20250405-143022.txt)text
+Sample Receipt (receipts/2025-04-05-143022.txt)text
 
 Order Receipt
-Date: 20250405-143022
+Date: 2025-04-05-14-3022
 MEDIUM_12_INCH REGULAR crust pizza with stuffed crust with toppings: Pepperoni (extra x1), Mozzarella - $17.00
 Large Coke drink - $3.00
 6 Garlic Knots - $9.00
 Total: $29.00
 
-How to RunPrerequisitesJava: 14+ (for switch expressions)  
+How to Run Prerequisites Java: 14+ (for switch expressions)  
 Git: For cloning
 
-InstallationClone the repository:  bash
+Installation
+Clone the repository:  bash
 
 git clone https://github.com/MarcSurpris/Surpris-Cheesy-Pizza-shop.git
 cd Surpris-Cheesy-Pizza-shop
 
-Create the receipts/ folder (if not present):  bash
-
-mkdir receipts
-
-Compile the code:  bash
-
-javac -d bin $(find src/main/java -name "*.java")
-
-Run the application:  bash
-
-java -cp bin com.pizzalicious.app.PizzaShopApp
-
-Note: If using an IDE (e.g., IntelliJ), import as a Java project and run PizzaShopApp.main().  
-Interesting Code Snippetjava
 
 // From PizzaSize.java: Dynamic meat pricing based on size (no enums!)
 public static double getMeatPrice(String size) {
@@ -116,20 +89,20 @@ Git & GitHub for version control
 PlantUML for diagrams  
 Console I/O with Scanner and FileWriter
 
-Future EnhancementsIntegrate a GUI (Swing/JavaFX)  
-Add database persistence (SQLite/JDBC)  
-Support online ordering via web API  
-Implement user accounts and loyalty rewards
 
-Contributing 
-Contributions are welcome! Please see CONTRIBUTING.md for guidelines:  Fork the repo  
+**Contributing** 
+Contributions are welcome! Please see CONTRIBUTING.md for guidelines:  
+Fork the repo  
 Create a feature branch  
 Submit a pull request with clear descriptions
 
-License 
-This project is licensed under the MIT License. See LICENSE for details.  AuthorMarc Surpris
+# **License** 
+
+This project is licensed under the MIT License. See LICENSE for details.  
+
+# **Author** 
+
+Marc Surpris
 Pluralsight Java Capstone Student
-GitHub Profile
-Email: your-email@example.com (mailto:your-email@example.com)  "Code like a chef. Deliver like a pro."
-Thank you for checking out PIZZA-licious! If you like it, give it a  on GitHub.  
+Thank you for checking out Surpris Pizza Shop! If you like it, give it a star on GitHub.  
 
