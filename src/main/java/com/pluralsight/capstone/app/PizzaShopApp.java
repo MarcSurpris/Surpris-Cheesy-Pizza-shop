@@ -2,6 +2,7 @@ package com.pluralsight.capstone.app;
 
 import com.pluralsight.capstone.model.*;
 import com.pluralsight.capstone.util.CrustType;
+import com.pluralsight.capstone.util.DrinkSize;
 import com.pluralsight.capstone.util.PizzaSize;
 
 import java.util.Scanner;
@@ -171,6 +172,18 @@ public class PizzaShopApp {
 
         // For extras, since addTopping checks for same name and adds extra if duplicate.
     }
+
+    private static void addDrink() {
+        System.out.println("Add Drink");
+
+        System.out.println("Select size: 1) Small,2) Medium, 3) Large");
+        int sizeChoice = getIntInput();
+        String dSize = switch(sizeChoice) {
+            case 1 -> DrinkSize.SMALL;
+            case 2 -> DrinkSize.MEDIUM;
+            case 3 -> DrinkSize.LARGE;
+            default -> DrinkSize.MEDIUM;
+        };
 
 }
 }
