@@ -1,5 +1,6 @@
 package com.pluralsight.capstone.app;
 
+import com.pluralsight.capstone.model.Cheese;
 import com.pluralsight.capstone.model.Meat;
 import com.pluralsight.capstone.model.Order;
 import com.pluralsight.capstone.model.Pizza;
@@ -124,6 +125,20 @@ public class PizzaShopApp {
             String[] meats = meatsInput.split(",");
             for (String m : meats) {
                 pizza.addTopping(new Meat(m.trim()));
+            }
+        }
+
+        // Extra meats? For simplicity, assume addTopping again for extra.
+        // Similarly for other categories...
+
+        // Cheeses
+
+        System.out.println("Add cheeses? Enter names separated by comma, or none");
+        String cheesesInput = scanner.nextLine().trim();
+        if (!cheesesInput.equals("none")) {
+            String[] cheeses = cheesesInput.split(",");
+            for (String c : cheeses) {
+                pizza.addTopping(new Cheese(c.trim()));
             }
         }
     }
