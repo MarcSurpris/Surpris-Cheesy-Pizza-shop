@@ -1,9 +1,6 @@
 package com.pluralsight.capstone.app;
 
-import com.pluralsight.capstone.model.Cheese;
-import com.pluralsight.capstone.model.Meat;
-import com.pluralsight.capstone.model.Order;
-import com.pluralsight.capstone.model.Pizza;
+import com.pluralsight.capstone.model.*;
 import com.pluralsight.capstone.util.CrustType;
 import com.pluralsight.capstone.util.PizzaSize;
 
@@ -139,6 +136,16 @@ public class PizzaShopApp {
             String[] cheeses = cheesesInput.split(",");
             for (String c : cheeses) {
                 pizza.addTopping(new Cheese(c.trim()));
+            }
+        }
+
+        // Regular toppings
+        System.out.println("Add regular toppings? Enter names separated by comma, or none");
+        String regularsInput = scanner.nextLine().trim();
+        if (!regularsInput.equals("none")) {
+            String[] regulars = regularsInput.split(",");
+            for (String r : regulars) {
+                pizza.addTopping(new RegularTopping(r.trim()));
             }
         }
     }
