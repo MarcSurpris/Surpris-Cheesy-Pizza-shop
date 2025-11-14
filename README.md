@@ -39,15 +39,15 @@ Interactive menus for easy navigation.
 
 ![img_4.png](img_4.png)
 
-**Add Meats**
+**Stuffed crust option**
 
 ![img_7.png](img_7.png)
 
-**Sample Receipt**
+**Add Meats**
 
 ![img_8.png](img_8.png)
 
-**Sample Receipt (receipts/2025-11-14-07-23-45.txt)text**
+**Sample Receipt**
 
 ![img_3.png](img_3.png)
 
